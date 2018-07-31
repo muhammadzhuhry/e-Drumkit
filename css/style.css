@@ -1,0 +1,493 @@
+/*-----------------------------------------------------------------------------
+
+GEEKY - CREATIVE VECTOR ONE PAGE
+
+date 		:    31/10/2017 - DD/MM/YYYY
+description	:	 Portfolio, Resume, Cv
+author		:    Muhammad Zuhri
+website		:    http://www.zuhri.net
+email		:	 muhammadzhuhry@gmail.com
+
+-------------------------------------------------------------------------------
+Color Navbar
+-	#494949 :	Navbar Background /the color is rgba(73, 73, 73, 0.3) when scrolled its change to #494949,
+				if you want to change navbar color change it on custom.js at js folder/
+-	#e0e0e0 :	Navbar a
+-	#00b0bb	:	Navbar a:hover, Navbar active & Navbar bottom-border
+
+Color Header
+-	#ffffff	:	Text on Hero-Header
+-	#212121	:	Hero-Header h1 & Hero-Name & Angela-down
+-	#007b82	:	Hero-Name Span
+
+Color Profile
+-	#080808 :	Profile h4
+-	#000000	:	Profile Quotes-Text
+-	#4d4d4d	: 	Profile Text
+- 	#00b0bb	:	Button-Download Background & Button-Download:hover
+-	#ffffff	:	Text on Button-Download
+
+Color Service
+-	#efefef	: 	Service Background
+-	#363636	:	Service Icon
+-	#6a737b	:	Service p
+
+Color Portfolio
+-	#363636	: 	Portfolio p
+-	#080808	: 	Portfolio Simplefilter li
+-	#494949	:	Portfolio Simplefilter li active & Simplefilter li:hover
+-	#ffffff	:	Portfolio Simplefilter Text, Overlay Text & Overlay a
+
+Color Testimonial
+-	#efefef	: 	Testimonial Background
+-	#ffffff	: 	Testimonial Border Image
+-	#00b0bb	:	Testimonial indicator li & indicator li:active
+
+Color Contact
+-	#373737	:	Contact Background
+-	#e0e0e0	:	Contact h2
+-	#b3b3b3	:	Contact Form-Control Border-Bottom
+-	#00b0bb	:	Contact Button-Send Background & Button-Send Border
+-	#ffffff	:	Contact Button-Send Text
+
+Color Footer
+-	#080808	:	Footer Background
+-	#ffffff	:	Footer Text
+-	#999999	:	Footer p
+
+-----------------------------------------------------------------------------*/
+
+/*===================================
+			  Basic Style
+===================================*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+a, a:focus, a:hover {
+	text-decoration: none;
+	outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+/*===================================
+			Margin & Padding
+===================================*/
+
+.padding-top-0  { padding-top: 0px !important;  }
+.padding-top-10 { padding-top: 10px !important; }
+.padding-top-20 { padding-top: 20px !important; }
+.padding-top-30 { padding-top: 30px !important; }
+.padding-top-50 { padding-top: 50px !important; }
+.padding-top-80 { padding-top: 80px !important; }
+
+.padding-bottom-0  { padding-bottom: 0px !important;  }
+.padding-bottom-10 { padding-bottom: 10px !important; }
+.padding-bottom-20 { padding-bottom: 20px !important; }
+.padding-bottom-30 { padding-bottom: 30px !important; }
+.padding-bottom-50 { padding-bottom: 50px !important; }
+.padding-bottom-80 { padding-bottom: 80px !important; }
+
+.margin-top-0   { margin-top: 0px !important;  }
+.margin-top-10  { margin-top: 10px !important; }
+.margin-top-20  { margin-top: 20px !important; }
+.margin-top-30  { margin-top: 30px !important; }
+.margin-top-50  { margin-top: 50px !important; }
+.margin-top-80  { margin-top: 80px !important; }
+.margin-top-100 { margin-top: 100px !important; }
+
+.margin-bottom-0   { margin-bottom: 0px !important;  }
+.margin-bottom-10  { margin-bottom: 10px !important; }
+.margin-bottom-20  { margin-bottom: 20px !important; }
+.margin-bottom-30  { margin-bottom: 30px !important; }
+.margin-bottom-50  { margin-bottom: 50px !important; }
+.margin-bottom-80  { margin-bottom: 80px !important; }
+.margin-bottom-100 { margin-bottom: 100px !important; }
+
+/*===================================
+				Navbar
+===================================*/
+
+.navbar {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: 0;
+	margin-bottom: 0;
+	background-color: rgba(73, 73, 73, 0.3);
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.navbar-brand {
+  	padding: 0px;
+}
+
+.navbar-brand > img {
+  	height: 100%;
+  	padding: 3px;
+  	width: auto;
+}
+
+.navbar a {
+	color: #e0e0e0 !important;
+	opacity: 1;
+	border-bottom: 2px solid transparent !important;
+}
+
+.navbar a:hover {
+	opacity: 1;
+	color:  #00b0bb !important;
+}
+
+.navbar-nav li.active a {
+   	 color:  #00b0bb !important;
+   	 border: none;
+   	 background-color: transparent !important;
+   	 border-bottom: 2px solid #00b0bb !important;
+}
+
+@media(max-width: 768px) {
+	.navbar-brand {
+	  	margin-left: 10px;
+	}
+}
+
+/*===================================
+				Hero
+===================================*/
+
+.hero-header{
+	height: 700px;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 35, 0.8),rgba(0, 0, 35, 0.8)),url(../img/background-header.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	position: relative;
+}
+
+.hero-header:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 220px;
+	background: url(../img/wave.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-text > img {
+	height: 244px;
+	width: 236px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+
+.img-centered {
+ 	margin: 0 auto;
+}
+
+.hero-text > .hero-name {
+	margin-top: 30px;
+  letter-spacing: 10px;
+  color: #c2d3ef;//
+  font-size: 50px;
+  font-weight: 500;
+	font: normal 50px 'Gaegu', cursive;
+}
+
+.hero-text > .hero-name span {
+   color: #5383d3;
+
+}
+
+.hero-text > h1 {
+	margin-top: 20px;
+  letter-spacing: 5px;
+  color: #c2d3ef;//
+  font-size: 25px;
+}
+
+.hero-text > h1 span {
+   color: #5383d3;
+	 font: normal 40px 'Sofia', cursive;
+}
+
+
+
+@media (max-width: 768px) {
+	.hero-header {
+		height: 450px;
+	}
+
+	.hero-text > img {
+		width: 100px;
+		height: 100px;
+		margin-top: 70px;
+	}
+
+	.hero-text > .hero-name {
+		margin-top: 40px;
+	    font-size: 30px;
+	}
+
+	.hero-text > h1 {
+		margin-top: 30px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.angle-down i{
+    	font-size: 30px;
+	}
+}
+
+/*===================================
+				PROFILE
+===================================*/
+
+.profile h2 {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.profile img {
+	height: 370px;
+	width: 480px;
+	margin-top: 20px;
+	margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle
+}
+
+.profile h4 {
+	color: #080808;
+	font-size: 20px;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+.profile .quotes-text {
+	color: #000000;
+	text-align: left;
+	margin: 20px 0 10px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.profile .quote {
+	font-size: 25px;
+}
+
+.profile .text {
+	color: #4d4d4d;
+	text-align: left;
+	padding-bottom: 25px;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.btn-download {
+    background-color: #00b0bb;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 8px;
+    margin: 25px 15px 0px 0px;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width:150px;
+    float: left;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+  	transition: 0.5s;
+  	opacity: 0.6;
+}
+
+.btn-download:hover {
+	background-color: #00b0bb;
+  opacity: 1;
+}
+
+.key-manual {
+  border-radius: none;
+  margin: 1rem;
+  font-size: 20px;
+  padding: 5px 5px;
+  width: 120px;
+  text-align: center;
+  color: white;
+  background: #000033;
+  text-shadow: 0 0 .5rem black;
+}
+
+.key-manual > span {
+	color: #5383d3;
+	font: normal 25px 'Gaegu', cursive;
+}
+
+@media(max-width: 768px) {
+	.profile h2 {
+		font-size: 25px;
+	}
+
+	.profile h4 {
+		font-size: 16px;
+	}
+
+	.profile .quotes-text,
+	.profile .text {
+		font-size: 12px;
+	}
+}
+
+/*===================================
+				DRUM
+===================================*/
+
+.drum h2 {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  /* border: 2px solid #5383d3; */
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 15px;
+  padding: 10px 5px;
+  transition: all .07s ease;
+  width: 100px;
+  text-align: center;
+  color: white;
+  background: #000000;
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #5383d3;
+  box-shadow: 0 0 1rem #5383d3;
+}
+
+kbd {
+	background: #000000;
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffffff;
+}
+
+/*===================================
+			   FOOTER
+===================================*/
+
+.footer {
+	text-align: left;
+	color: #ffffff;
+	background-color: #000023;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.footer h4 {
+	letter-spacing: 3px;
+	margin: 20px 0 15px;
+}
+
+.footer p {
+	font-size: 15px;
+	letter-spacing: 1px;
+	padding-bottom: 5px;
+}
+
+.footer .social i {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+	font-size: 15px;
+  color: #ffffff;
+  transition: .2s;
+  padding: 7px 8px;
+	border-radius: 50%;
+	background-color: #5383d3;
+}
+
+.footer .social .fa:hover {
+   	color:  #5383d3;
+   	background-color: #ffffff;
+}
+
+.footer .footer-profile i {
+	color: #5383d3;
+	font-size: 15px;
+	padding-right: 5px;
+}
+
+.footer .footer-profile a {
+	color: #ffffff;
+}
+
+.footer hr {
+	border: 1px solid #5383d3; /*second-colour*/
+	margin-bottom: 0px;
+}
+
+.footer .copyright p {
+	color: #999999;
+	font-size: 15px;
+    letter-spacing: 3px;
+    margin: 10px 0 10px;
+}
