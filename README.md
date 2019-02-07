@@ -1,6 +1,6 @@
 # e-Drumkit by Zuhri
 
-**e-Drumkit** is a web that can make a drumkit sound like **clap**, **hihat** and the other. This web was created by using bootstrap framework for the css, and for the event call drumkit sound i was used original javascript. 
+**e-Drumkit** is a web that can make a drumkit sound like **clap**, **hihat** and the other. This web was created by using bootstrap framework for the css, and for the event call drumkit sound i was used vanilla javascript. 
 
 [Demo](https://muhammadzhuhry.github.io/e-Drumkit/)
 
